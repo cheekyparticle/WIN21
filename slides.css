@@ -1,0 +1,107 @@
+/* when setting overlay,
+ * (see metadata in notebook)
+ *
+ * it's your responsability to put all the pieces where you want
+ * even in the middle if that was what you wanted
+ *
+ */
+
+#rise-header {
+    margin: 10px;
+    left: 10%;
+}
+
+#rise-footer {
+    margin: 10px;
+    right: 10%;
+}
+
+#rise-backimage {
+    opacity: 0.20;
+}
+
+.cp3logo{
+    position: fixed;
+    top: 3%;
+    left: 90%;
+    max-height: 100px;
+    max-width: 100px;  
+}
+
+.uclouvain{
+    position: fixed;
+    top: 3%;
+    left: 50%;
+    max-height: 500px;
+    max-width: 300px;  
+}
+
+.myname{
+    position: fixed;
+    top: 3%;
+    left: 10%;  
+}
+
+.conferencename{
+    position: fixed;
+    top: 3%;
+    left: 90%;
+    max-height: 130px;
+    max-width: 130px;   
+}
+
+
+/* TODO: maybe we need to port this to main.css?  */
+.reveal img {
+    max-width: 100%;
+}
+#left {
+  left:-8.33%;
+  text-align: left;
+  float: left;
+  width:50%;
+  z-index:-10;
+}
+
+#right {
+  left:31.25%;
+  top: 75px;
+  float: right;
+  text-align: right;
+  z-index:-10;
+  width:50%;
+}
+
+
+.multiCol {
+    display: table;
+    table-layout: fixed; // don't fudge depending on content
+    width: 100%;
+    text-align: left; // matter of taste, makes imho sense
+}
+
+.col {
+    display: table-cell;
+    vertical-align: top;
+    width: 50%;
+    padding: 2% 0 2% 3%; // some vertical, and between columns
+    &:first-of-type { padding-left: 0; } // there's nothing before col1
+}
+
+img[alt$=">"] {
+  float: right;
+  background-color:transparent
+}
+
+img[alt$="<"] {
+  float: left;
+  background-color:transparent
+}
+
+img[alt$="><"] {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  float: none!important;
+}
